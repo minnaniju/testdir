@@ -1,0 +1,24 @@
+{
+  "name": "node.js-pm2-example",
+  "version": "1.0.0",
+  "description": "An easy example for pm2 in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start --name server -i 4 index.js",
+    "del": "pm2 delete server",
+    "show": "pm2 show server",
+    "logs": "pm2 logs server",
+    "test": "loadtest -n 1000 -c 100 http://localhost:3000"
+  },
+  "keywords": [
+    "Node.js",
+    "pm2"
+  ],
+  "author": "Steve Lai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "loadtest": "^2.3.0",
+    "pm2": "^2.9.1"
+  }
+}
