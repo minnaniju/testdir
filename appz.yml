@@ -12,7 +12,7 @@ build:
     args:
         PM2: enabled
         WORKDIR: /appz/server/transitapp/
-        WORK_DIR: /appz/server/transitapp/src
+        #WORK_DIR: /appz/server/transitapp/src
 
 
 deploy:
@@ -28,4 +28,4 @@ properties:
     revision: 13
     page_color: Blue
     #PM2: enabled
-    #WORK_DIR: '/appz/server/transitapp/src'
+    WORK_DIR: /appz/server/transitapp/src
