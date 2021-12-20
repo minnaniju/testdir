@@ -12,6 +12,7 @@ build:
     args:
         PM2: enabled
         WORKDIR: /appz/server/transitapp/
+        WORK_DIR: /appz/server/transitapp/src
 
 
 deploy:
