@@ -1,0 +1,25 @@
+app:
+    name: nodetest
+    code: nodetest
+    notify: fjoy@ecloudcontrol.com
+
+build:
+    version: 0.1
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: node-17.2
+
+
+deploy:
+    context: francisjoy/DEV
+    replicas: 1
+    port:
+    - 3000
+
+
+properties:
+    page_title: "React-bootstrap + nodejs-express App"
+    ##site_url: "https://hellonodejs.appzclient.com/"
+    revision: 8
+    page_color: Blue
