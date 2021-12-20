@@ -9,6 +9,9 @@ build:
     build_file: none
     output_files: output/*.zip
     image_template: node-17.2
+    args:
+        PM2: enabled
+        WORK_DIR: /appz/server/transitapp/src
 
 
 deploy:
