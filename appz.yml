@@ -10,9 +10,7 @@ build:
     output_files: output/*.zip
     image_template: node-17.2
     args:
-        PM2: enabled
         WORKDIR: /appz/server/transitapp/
-        #WORK_DIR: /appz/server/transitapp/src
 
 
 deploy:
@@ -27,5 +25,5 @@ properties:
     ##site_url: "https://hellonodejs.appzclient.com/"
     revision: 13
     page_color: Blue
-    #PM2: enabled
+    PM2: enabled
     WORK_DIR: /appz/server/transitapp/src
