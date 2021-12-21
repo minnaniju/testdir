@@ -23,7 +23,15 @@ deploy:
 properties:
     page_title: "React-bootstrap + nodejs-express App"
     ##site_url: "https://hellonodejs.appzclient.com/"
-    revision: 14
+    
+    MONGO_HOSTNAME: "mongodb-4-4"
+    MONGO_INITDB_ROOT_USERNAME: francis
+    MONGO_INITDB_ROOT_PASSWORD: 
+        vault: MONGO_FRANCIS_PASSWORD
+    MONGO_INITDB_DATABASE: transit
+    MONGO_PORT: 27017
+    
     page_color: Blue
     PM2: enabled
     WORK_DIR: /appz/server/transitapp/src
+    revision: 14
