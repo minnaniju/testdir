@@ -25,10 +25,10 @@ properties:
     ##site_url: "https://hellonodejs.appzclient.com/"
     
     MONGO_HOSTNAME: "mongodb-4-4"
-    MONGO_INITDB_ROOT_USERNAME: francis
-    MONGO_INITDB_ROOT_PASSWORD: 
+    MONGO_USER: francis
+    MONGO_PASSWORD: 
         vault: MONGO_FRANCIS_PASSWORD
-    MONGO_INITDB_DATABASE: transit
+    MONGO_DATABASE: transit
     MONGO_PORT: 27017
     
     page_color: Blue
